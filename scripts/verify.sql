@@ -1,15 +1,15 @@
-use salesdw;
+use sales_dw;
 
-select 'Table', 'Rows' from dim_customer
+select 'Table', 'Rows' from Dim_Customer
 union
-select 'dim_customer', count(*) from dim_customer
+select 'Dim_Customer', count(*) from Dim_Customer
 union
-select 'dim_date', count(*) from dim_date
+select 'Dim_Date', count(*) from Dim_Date
 union
-select 'dim_product', count(*) from dim_product
+select 'Dim_Product', count(*) from Dim_Product
 union
-select 'dim_salesperson', count(*) from dim_salesperson
+select 'Dim_Salesperson', count(*) from Dim_SalesPerson
 union
-select 'dim_store', count(*) from dim_store
+select 'Dim_Store', count(*) from Dim_Store
 union
-select 'fact_productsales', count(*) from fact_productsales;
+select 'Fact_ProductSales', count(*) from Fact_ProductSales;
